@@ -1,0 +1,16 @@
+input[type=text]{
+    width: 150px;
+    display: block;
+    margin-top: 10px;
+}
+
+input[type=submit]{
+    width: 120px;
+    display: block;
+    background-color: yellow;
+}
+
+a[target =_blank]{
+    text-decoration: none;
+    color: tomato;
+}

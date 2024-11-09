@@ -1,0 +1,12 @@
+ul  b{
+    color: blue;
+    font-size: 20px;
+}
+
+ul>  li{
+    font-size: smaller;
+    color: red;
+}
+
+
+

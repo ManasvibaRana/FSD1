@@ -1,0 +1,32 @@
+/* .a{
+    color:pink;
+}
+#c{
+    color: green;
+}
+.b{
+    color: tomato;
+    background-color: cyan;
+} */
+
+
+/* 
+id > Attribute > class > element */
+h1{
+    color: red;
+}
+*{
+    text-align: center;
+    color: pink;
+}
+
+
+
+p.cls{
+    color: tomato;
+}
+
+p.large{
+    font-size: 30px;
+}
+
