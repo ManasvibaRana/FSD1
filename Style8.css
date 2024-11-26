@@ -1,0 +1,25 @@
+a:link{
+   color: cyan;
+}
+
+a:visited{
+    color: hotpink;
+}
+
+a:hover{
+    color: purple;
+    font-size: 80px;
+    transition-duration: 2s;
+   
+}
+
+a:active{
+    color: Red;
+}
+
+a {
+    font-size: 50px;
+    text-decoration: none;
+    text-align: center;
+    border-style: inset;
+}

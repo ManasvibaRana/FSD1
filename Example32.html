@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Pagination</title>
+
+        <style>
+            .pagination{
+               margin-top: 30px;
+                display: inline-block;
+            }
+
+            .pagination a{
+                text-decoration: none;
+                color: black;
+                padding: 20px;
+                border: 1px solid black;
+                margin: -2px;
+                border-radius: 10%;
+            }
+
+            a.active{
+                background-color: green;
+                color: white;
+            }
+
+            a:hover:not(.active){
+                background-color: yellow;
+                color: red;
+                font-size: 20px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="pagination">
+            <a class="active" href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a class="active" href="#">&raquo;</a>
+        </div>
+    </body>
+</html>

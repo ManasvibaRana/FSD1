@@ -1,0 +1,29 @@
+.india{
+    width: 50%;
+    border: blue solid;
+    display: inline-block;
+}
+
+.usa{
+    width: 40%;
+    border: red dotted;
+    display: inline-block;
+    top:0;
+}
+
+img{
+    height: 100px;
+    width: 80px;
+    float:right;
+   
+}
+
+.usa img{
+    height: 100px;
+    width: 80px;
+    float: left;
+    
+}
+h1{
+    text-align: center;
+}

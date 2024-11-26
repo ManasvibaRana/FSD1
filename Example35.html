@@ -1,0 +1,78 @@
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media task</title>
+
+    <style>
+        .hide{
+            height: 100px;
+            width: 100%;
+            background-color:tomato;
+            color: white;
+            text-align: center;
+        }
+
+        .re{
+
+            margin: 20px;
+            background-color: white;
+            color: black;
+            height: 200px;
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        .nav{
+            background-color: tomato;
+        
+        }
+
+        .nav a{
+            text-decoration: none;
+            color: white;
+            margin: 20px;
+            padding: 20px;
+            font-size: 30px;
+        }
+
+        @media only screen and (max-width:600px) {
+            .hide{
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width:800px) {
+            .re{
+              background-color:lightgreen;
+            }
+        }
+
+        @media only screen and (max-width:400px) {
+            .re{
+                background-color:blue;
+            }
+            
+        }
+
+        @media only screen and (max-width:600px) {
+            .nav a{
+                display:block;
+            }
+        }
+
+    </style>
+</head>
+<body>
+     <div class="hide"><h1>Hide elements on different screen sizes</h1></div>
+     <div class="re"><h1>Resize the browser window to see the effect!</h1>
+        Use mediaqueries to set the background-color to lavender if the viewport is 800 pixels wide or wider, to lightgreen if the viewport is between 400 and 799 pixels wide. If the viewport is smaller than 400 pixels, the background-color is lightblue.
+    </div>
+
+    <div class="nav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+</body>
+</html>

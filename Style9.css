@@ -1,0 +1,35 @@
+h3::before{
+    content: "#####";
+}
+
+h3::after{
+    content: "#####";
+}
+
+::selection{
+    background-color: yellow;
+    color: green;
+}
+
+::marker{
+    color: red;
+    
+}
+
+.a::marker{
+    content: "#";
+    color: tomato;
+}
+
+p::first-letter{
+    font-size: 80px;
+}
+
+.b p::first-line{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+
+

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Globle vs local</title>
+
+        <style>
+            :root{
+                --c:blue;
+                --bcol:lightgray;
+                --fs:42px;
+            }
+
+            h1{ 
+                --c:green;
+                color: var(--c);
+            }
+
+            p{
+                color: var(--c);
+                background-color: var(--bcol);
+               font-size: var(--fs);
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Example of Local vs Globle var</h1>
+        <p>var() function is used</p>
+    </body>
+</html>

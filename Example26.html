@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Pta nhi kyaa!!</title>
+        <style>
+            div{
+                height: 200px;
+                width: 300px;
+                float: left;
+                border: 1px solid blue;
+                margin: 10px;
+                padding: 10px;
+                position: relative;
+            }
+
+            .p1{
+                background-image: conic-gradient(red 45deg,blue 180deg, tomato 210deg);
+            }
+
+            .p2{
+                background-image: conic-gradient(from 90deg,red,blue,tomato);
+            }
+
+            .p3{  
+                background-image: conic-gradient(red,blue,tomato);
+            }
+
+            .p4{
+                background-image: conic-gradient(red 20%,blue 60%,tomato 10%);
+            }
+
+            .p5{
+                background-image: conic-gradient(red 0deg,red 90deg,green 90deg,green 180deg,yellow 180deg, yellow 270deg, blue 270deg);
+            }
+
+            .p6{
+                background-image: repeating-conic-gradient(red 10%,blue 20%,tomato 20%);
+                height: 300px;
+                width: 300px;
+                transition-property: height,width;
+                transition: 3s;
+            }
+
+            .p7{
+                background-image: repeating-conic-gradient(pink,rgb(173, 23, 173),rgba(228, 90, 216, 0.822),rgb(64, 0, 167),purple,rgb(94, 22, 94)) ;
+            }
+
+            .p1:hover{
+                transform: translate(50%,50%);
+            }
+            .p2:hover{
+        
+                transform: rotate(45deg);
+            }
+
+            .p3:hover{
+                transform: skewX(20deg);
+            }
+
+            .p4:hover{
+                transform: scaleX(2);
+            }
+
+            .p5:hover{
+                transform: scaleX(-1);
+            }
+
+            .p6:hover{
+                transform: rotate(3000deg);
+                height: 400px;
+                width: 400px;
+               
+            }
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="p1">conic 1</div>
+        <div class="p2"> 2</div>
+        <div class="p3"> 3</div>
+        <div class="p4"> 4</div>
+        <div class="p5"> 5</div>
+        <div class="p6">6</div>
+        <div class="p7"> </div>
+        <div class="p8"> 8</div>
+    </body>
+</html>

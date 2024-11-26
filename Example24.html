@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Transition Task</title>
+
+        <style>
+
+            input{
+                background-color: pink;
+                border: 1px solid plum;
+                height: 30px;
+                width: 150px;
+                margin-top: 10px;
+                transition-duration: 3s;
+                transition-delay: 2s;
+            }
+            #uname:hover{
+                 background-color: orangered;
+                
+                 height: 50px;
+                 width: 250px;
+            }
+
+            #sub:hover{
+                background-color: orangered;
+                 transition-duration: 3s;
+                 transition-delay: 2s;
+                 height: 50px;
+                 width: 250px;
+            }
+
+            #reset:hover{
+                background-color: orangered;
+                 transition-duration: 3s;
+                 transition-delay: 2s;
+                 height: 50px;
+                 width: 250px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form>
+            <label name="name">Uname :    <input id="uname" for="name" type="text" placeholder="Enter Name"></label>
+          
+            <br>
+            <label id="pass">Password :  <input id="uname" type="password" placeholder="Require Password"> </label>
+           
+            <br>
+            
+            <input type="submit" id="sub">
+            <input type="reset" id="reset">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+
+*{
+    margin-bottom: 8px;
+}
+.a{
+    border-style: solid;
+    border-color: red green blue yellow;
+    font-size: 20px;
+}
+
+.b{
+    border-style: double;
+    border-color: red green blue ;
+    font-size: 20px;
+}
+
+.c{
+    border-style: dotted;
+    border-color: red green;
+    font-size: 20px;
+}
+
+.d{
+    border-style: dashed;
+    border-color:  blue;
+    font-size: 20px;
+}
+
+.e{
+    border-style: solid dashed dotted double;
+    border-color: blue red tomato green;
+    border-width: 8px;
+    font-size: 20px;
+}
+
+.f{
+    border: 5px solid red;
+    border-radius: 50%;
+    text-align: center;
+}
