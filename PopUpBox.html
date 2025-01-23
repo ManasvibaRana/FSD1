@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Box</title>
+    <script type="text/javascript" language="javascript">
+       function alert1(){
+           alert("Warning Message")
+           document.write("Danger Ahead!!")
+       }
+
+       function conf(){
+         var d = confirm("Do you want to continue?")
+        if(d==true){
+            document.write("User want to continue")
+        }else{
+            document.write("User  doesn't want to continue")
+        }
+
+       }
+
+       function pro(){
+        var data =prompt("Enter value : ")
+        document.write("Welcome "+ data)
+       }
+
+
+       
+    </script>
+</head>
+<body>
+
+    <input type="button" value="Ok" onclick="alert1()">
+    <input type="button" value="confirm" onclick="conf()">
+    <input type="button" value="prompt" onclick="pro()">
+
+</body>
+</html>

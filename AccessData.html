@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Data</title>
+</head>
+<body>
+
+    <form action="#" name="f1" onsubmit="fun2()">
+         <input name="t1" type="text">
+         <input name="t2" type="password">
+
+         <input type="submit">
+         <input type="reset">
+    </form>
+
+    <script>
+        function fun() {
+            obj = document.f1.t2.value
+
+            document.write(obj)
+        }
+
+        function fun2(){
+            obj = document.forms["f1"]
+            alert(obj.length)
+        }
+    </script>
+    
+</body>
+</html>

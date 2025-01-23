@@ -1,0 +1,30 @@
+<!-- write js form to acceptinh int having 4 inte only input should not accept character of letters and symnol -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <input type="text" id="t1" name="username" >
+    <input type="submit" onclick="fun()">
+
+    <script>
+        function fun() {
+            pat =/\D/
+
+            a =document.getElementById("t1").value
+            
+            if(a.length !=4){
+                alert("Must be 4")
+            } else if (pat.test(a)){
+                alert("Invalide!!")
+            }  else{
+                alert("Success!!")
+            }
+        }
+    </script>
+    
+ </body>
+ </html>

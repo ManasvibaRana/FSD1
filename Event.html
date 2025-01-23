@@ -1,0 +1,70 @@
+                                                                                       
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+
+</head>
+<body>
+    <p  onclick="change(this)">Tag 1</p>
+
+    <div onmousedown="mdown(this)" onmouseup="mup(this)" style="background-color: cyan; padding: 20px; height: 30px;">
+        Click Me
+    </div>
+
+
+    <div onmouseover="mover(this)" onmouseout="mout(this)" style="border: 2px; border-color: aqua; padding: 20px; height: 30px; width: 70px; margin: auto;">
+       
+    </div>
+
+   <div onmousedown="fun(event)"  style="background-color:pink; padding: 20px; height: 30px;">
+        Click Me
+    </div>
+    <script>
+        function change(id){
+             id.innerHTML = "Change"
+         }
+
+         function mdown(e){
+            e.style.backgroundColor = "yellow"
+            e.innerHTML = "Clicked"
+         }
+
+         function mup(e){
+            e.style.backgroundColor = "pink"
+            e.innerHTML = "Release"
+         }
+
+         function mover(e){
+             e.style.backgroundColor = "pink"
+            e.innerHTML = "Mouse Entered"
+         }
+
+         function mout(e){
+             e.style.backgroundColor = "pink"
+            e.innerHTML = "hehehe"
+         }
+
+         function fun(e){
+            val = e.button
+
+            switch (val) {
+                case 0: alert("Left click")
+                    break;
+                    case 1: alert("Middle click")
+                    break;
+
+                    case 2: alert("Right click")
+                    break;
+                default:
+                    break;
+            }
+         }
+
+
+     </script>
+ 
+</body>
+</html>

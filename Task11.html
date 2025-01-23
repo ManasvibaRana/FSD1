@@ -1,0 +1,33 @@
+<!-- write a js code to display alert with pop-up  text-message Enter somthing if input field in empty on submit  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+ </head>
+ <body>
+
+    <form action="#" name="f1" onsubmit="fun()">
+         <input name="t1" type="text">
+         <input name="t2" type="password">
+
+         <input type="submit">
+         <input type="reset">
+    </form>
+
+    <script>
+        function fun() {
+            obj = document.forms["f1"]["t1"].value
+            
+
+            a = obj.length
+
+            if (a<=0){
+                alert("Empty!!")
+            }
+        }
+    </script>
+    
+ </body>
+ </html>

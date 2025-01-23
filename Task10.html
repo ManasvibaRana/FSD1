@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyEvent</title>
+
+    <script>
+        function fun(e){
+          c = (e.key)
+          document.write(c)
+          switch (c) {
+            case "a":
+                document.write("Vowel is Entered " + e.keyCode +" " + e.key)
+                
+                break;
+                case "a":
+                document.write("Vowel is Entered " + e.keyCode +" " + e.key)
+                
+                break;    
+           
+            default:  document.write( e.keyCode +" " + e.key)
+                break;
+          }
+        }
+
+        function fun2(e){
+            e.bgColor = "red"
+        }
+
+    </script>
+
+</head>
+<body onkeyup="fun2(this)" onkeypress="fun(event)" >
+
+
+</body>
+</html>

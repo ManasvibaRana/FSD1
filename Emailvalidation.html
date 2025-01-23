@@ -1,0 +1,28 @@
+<!-- 23002171210141@mail.ljku.edu.in -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <input type="text" id="t1" name="email" >
+    <input type="submit" onclick="fun()">
+
+    <script>
+        function fun() {
+            pat =/^\d{14}\@[a-z]{4}\.\w{3}\.\w{2}$/
+
+            a =document.getElementById("t1").value
+            
+            if (!pat.test(a)){
+                alert("Invalide!!")
+            } else{
+                alert("Success!!")
+            }
+        }
+
+      </script>  
+ </body>
+ </html>

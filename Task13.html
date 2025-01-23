@@ -1,0 +1,35 @@
+<!-- validation password and user name 1, password must be in length 6-12   username should not start with _@ and any digit 
+3. both will must not be blanck -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+<body>
+    <input type="text" id="t1" name="username" >
+    <input type="password" id="t2" name="password" >
+    <input type="submit" onclick="fun()">
+
+    <script>
+        function fun() {
+            pat =/^[_@]|^[0-9]/
+
+            a =document.getElementById("t1").value
+            b =document.getElementById("t2").value
+
+            if (pat.test(a)){
+                alert("Invalide!!")
+            }  else if (a.length == 0 || b.length ==0){
+                alert("can't be empty") 
+            }else if (b.length>=12|| b.length<=6){
+                alert("Must be between 6-12")
+            } else {
+                alert("Successfull!!")
+            }
+        }
+    </script>
+</body>
+</html>
